@@ -1,0 +1,8 @@
+<h1> <%= "#{@employee.first_name} #{@employee.last_name}" %> </h1>
+<br>
+<img src=" <%= @employee.img_url %> " alt=<%= "#{@employee.first_name} #{@employee.last_name}" %>>
+<p> <%= @employee.alias %> </p>
+<p> <%= @employee.title %> </p>
+<p> <%= @employee.office %> </p>
+<% dog = Dog.find(@employee.dog_id) %> 
+<p> <%= link_to dog.name, dog_path(dog) %> </p>
