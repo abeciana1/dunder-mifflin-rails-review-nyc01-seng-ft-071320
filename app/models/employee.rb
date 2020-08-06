@@ -11,6 +11,17 @@ class Employee < ApplicationRecord
         end
     end
 
+ def check_alias
+    if Employee.aliases.include?(params[:employee][:alias]) 
+    "This alias is taken. Try again." 
+    end
+ end
+
+def check_title 
+    if Employee.title.include?(params[:employee][:title]) 
+   "This Title is taken. Try again."
+    end
+end
     
 
 end

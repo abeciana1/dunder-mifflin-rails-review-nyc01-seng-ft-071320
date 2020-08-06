@@ -20,6 +20,11 @@ class EmployeesController < ApplicationController
         find_employee
     end
 
+    def update 
+        @employee = find_employee.update(employee_params)
+        redirect_to employee_path
+    end
+
 
 
     private

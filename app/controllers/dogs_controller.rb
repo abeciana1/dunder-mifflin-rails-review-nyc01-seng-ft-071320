@@ -7,5 +7,8 @@ class DogsController < ApplicationController
         @dog = Dog.find(params[:id])
     end
 
+    def sort_dogs
+        Dog.owners.sort
+    end
 
 end

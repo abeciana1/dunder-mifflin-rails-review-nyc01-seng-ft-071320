@@ -3,3 +3,5 @@
 <p> <%= link_to dog.name, dog_path(dog) %> </p>
 
 <%end%>
+
+<%= button_to "sort", dog_path(@dogs), method: :sort_dogs %>

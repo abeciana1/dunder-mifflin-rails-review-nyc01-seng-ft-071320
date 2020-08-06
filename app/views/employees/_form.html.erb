@@ -8,13 +8,10 @@
 <br>
     <%= f.label :alias %>
     <%= f.text_field :alias %>
-    <% if params[:employee][:alias] == Employee.aliases %>
-    <p><strong> <%= "This alias is taken. Try again." %> </strong></p> 
-    <%end%>
 <br>
     <%= f.label :title %>
     <%= f.text_field :title %>
-    
+
 <br>
     <%= f.label :office%>
     <%= f.text_field :office %>
